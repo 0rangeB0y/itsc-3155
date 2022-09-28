@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href = "./bootstrap-5.2.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href = ".\bootstrap-5.2.1-dist\css\default.css" rel="stylesheet">
     <script src = "./bootstrap-5.2.1-dist/js/bootstrap.js"></script>
     <h1>My contact page</h1>
 
@@ -32,6 +33,29 @@
       </nav>
 </head>
 <body>
+
+    <form action="results.html" method="get">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" id="option1" name="option1" value="manager">
+            <label for="option1"> Send to manager</label><br>
+            <input type="checkbox" id="option2" name="option2" value="Recruiting">
+            <label for="option2"> Send to recruiting</label><br>
+            <input type="checkbox" id="option3" name="option3" value="Advertising">
+            <label for="option3"> Send to Advertising</label><br><br>
+            
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Type message here</span>
+            <textarea class="form-control"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     
 </body>
 </html>
