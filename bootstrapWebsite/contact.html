@@ -35,10 +35,14 @@
 <body>
 
     <form action="results.html" method="get">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="form">
+            <label for="name"><strong>Name:</strong></label><br>
+            <input type="text" id="name" name="name" placeholder="First and Last Name"><br>
+            <label for="phone"><strong>Phone Number:</strong></label><br>
+            <input type="tel" id="phone" name="phone" placeholder="###-###-####"><br>
+            <label for="email"><strong>Email Adress:</strong></label><br>
+            <input type="text" id="email" name="email" placeholder="abcd@email.com"><br>
+            <br>
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" id="option1" name="option1" value="manager">
@@ -47,11 +51,10 @@
             <label for="option2"> Send to recruiting</label><br>
             <input type="checkbox" id="option3" name="option3" value="Advertising">
             <label for="option3"> Send to Advertising</label><br><br>
-            
         </div>
-        <div class="input-group">
-            <span class="input-group-text">Type message here</span>
-            <textarea class="form-control"></textarea>
+        <div class="form">
+            <label for="Email"><strong>Type message:</strong></label><br>
+            <input type="textarea" id="message" name="message" placeholder=""><br>
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
